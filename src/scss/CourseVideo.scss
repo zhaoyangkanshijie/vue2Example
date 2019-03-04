@@ -27,6 +27,8 @@
     position: relative;
     video{
         float: left;
+        display: block;
+        height: 100%;
     }
     .videoEnd{
         width: 960px;

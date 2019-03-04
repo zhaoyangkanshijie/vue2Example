@@ -36,6 +36,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 inputBox组件由标题、可变类型输入框、错误提示三部分组成，适用于数据填写与校验，减少提交数据的复杂度。
 
+![inputBox](./inputbox.gif)
+
 2. 技术面
 * 父子组件通信：props、emit（自定义事件）
 * 双向绑定：v-model
@@ -129,6 +131,8 @@ inputBox组件由标题、可变类型输入框、错误提示三部分组成，
 
 dragSlider由拖动滑块和错误提示组成，用于拖动验证功能。
 
+![dragSlider](./dragslider.gif)
+
 2. 技术面
 * 父子组件通信：props
 * 父组件请求页面：axios
@@ -206,6 +210,8 @@ watch: {
 1. 功能描述
 
 自定义视频进度条，暂停、播放、全屏、拖动进度条、视频章节
+
+![video](./video.gif)
 
 2. 技术面
 * video操作

@@ -326,6 +326,8 @@ export default {
     // url改变，不切换组件
     '$route' (to, from) {
       this.page = to.name;
+      this.$refs.accountSlide.reset();
+      this.$refs.passwordSlide.reset();
     }
   },
   components: {
