@@ -1,0 +1,51 @@
+.errorCode{
+    height: 982px;
+    position: relative;
+
+    .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 416px;
+        height: 200px;
+
+        .error{
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin-right: 48px;
+        }
+
+        .error.error403{
+            background-image: url('../assets/error403.png');
+        }
+
+        .error.error404{
+            background-image: url('../assets/error404.png');
+        }
+
+        .error.error500{
+            background-image: url('../assets/error500.png');
+        }
+
+        .code{
+            font-size: 64px;
+            color: #1785E6;
+            line-height: 86px;
+            float: left;
+            margin: 30px 0 12px;
+            font-weight: bold;
+        }
+
+        .info{
+            font-size: 14px;
+            color: #999999;
+            line-height: 20px;
+            float: left;
+            font-weight: bold;
+        }
+    }
+}

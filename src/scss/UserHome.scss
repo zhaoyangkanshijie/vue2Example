@@ -1,0 +1,124 @@
+.userHome{
+    background-color: #ffffff;
+    
+    .main{
+        min-height: 982px;
+
+        .nav{
+            margin-top: 40px;
+            height: 46px;
+            margin-bottom: 40px;
+
+            .item{
+                font-size: 24px;
+                color: #333333;
+                line-height: 40px;
+                font-weight: bold;
+                width: 96px;
+                float: left;
+                margin-right: 32px;
+                display: block;
+            }
+
+            .item.active{
+                color: #00AAFF;
+                padding-bottom: 3px;
+                border-bottom: 3px solid #00AAFF;
+            }
+        }
+
+        .information{
+
+            .inputbox{
+                margin-top: 24px;
+            }
+
+            .hint{
+                font-size: 12px;
+                color: #999999;
+                line-height: 16px;
+                margin: 8px 0 48px;
+            }
+
+            .save{
+                width: 200px;
+                height: 48px;
+                background-color: #00AAFF;
+                border-radius: 4px;
+                font-size: 16px;
+                color: #FFFFFF;
+                text-align: center;
+                line-height: 48px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 48px;
+            }
+
+            .modal{
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                z-index: 1;
+                width: 480px;
+                height: 120px;
+                background-color: #FFFFFF;
+                box-shadow: 0 2px 16px 0 rgba(0,0,0,0.20);
+                border-radius: 2px;
+
+                .content{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 96px;
+                    height: 24px;
+
+                    .image{
+                        display: block;
+                        width: 24px;
+                        height: 24px;
+                        float: left;
+                    }
+
+                    .word{
+                        font-size: 16px;
+                        color: #333333;
+                        text-align: center;
+                        line-height: 24px;
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        .certification{
+            display: block;
+        }
+
+        .password{
+
+            .inputbox{
+                margin-top: 24px;
+            }
+
+            .save{
+                width: 200px;
+                height: 48px;
+                background-color: #00AAFF;
+                border-radius: 4px;
+                font-size: 16px;
+                color: #FFFFFF;
+                text-align: center;
+                line-height: 48px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 48px;
+            }
+        }
+    }
+}

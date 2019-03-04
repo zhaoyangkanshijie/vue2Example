@@ -1,0 +1,79 @@
+.header{
+    background-color: #262626;
+    height: 50px;
+
+    .logo{
+        display: block;
+        float: left;
+        width: 137px;
+        height: 17px;
+        margin: 17px 0 16px 0;
+        color: #FFFFFF;
+    }
+
+    .line{
+        font-size: 18px;
+        line-height: 50px;
+        color: #FFFFFF;
+        margin: 0 10px;
+        float: left;
+        font-weight: bold;
+    }
+
+    .title{
+        float: left;
+        font-size: 18px;
+        line-height: 50px;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .nav{
+        height: 50px;
+        padding-left: 93px;
+        float: left;
+        position: relative;
+
+        .item{
+            font-size: 16px;
+            color: #FFFFFF;
+            line-height: 24px;
+            padding: 13px 0;
+            margin-right: 48px;
+            font-weight: bold;
+            display: block;
+            float: left;
+        }
+
+        .item.active{
+            color: #00AAFF;
+            padding: 13px 0 9px;
+            border-bottom: 4px solid #00AAFF;
+        }
+    }
+
+    .user{
+        float: right;
+        height: 50px;
+
+        .hello{
+            float: left;
+            font-size: 14px;
+            color: #CCCCCC;
+            line-height: 50px;
+            margin-right: 12px;
+        }
+
+        .user{
+            color: #CCCCCC;
+        }
+
+        .log{
+            float: right;
+            font-size: 14px;
+            color: #CCCCCC;
+            line-height: 50px;
+            cursor: pointer;
+        }
+    }
+}

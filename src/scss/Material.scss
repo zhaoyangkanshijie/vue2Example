@@ -1,0 +1,114 @@
+.material{
+    background-color: #FFFFFF;
+
+    .main{
+        padding-top: 40px;
+        min-height: 942px;
+
+        .title{
+            font-size: 24px;
+            color: #333333;
+            line-height: 40px;
+            font-weight: bold;
+            float: left;
+        }
+
+        .downloadAll{
+            background-color: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            width: 100px;
+            height: 32px;
+            float: right;
+            cursor: pointer;
+
+            .downloadImg{
+                float: left;
+                display: block;
+                width: 16px;
+                height: 16px;
+                margin: 8px 4px 8px 12px;
+            }
+
+            .downloadWord{
+                float: left;
+                font-size: 14px;
+                color: #333333;
+                line-height: 32px;
+            }
+        }
+
+        .materialTable{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 24px;
+
+            tr{
+                height: 40px;
+                border-bottom: 1px solid #E6E6E6;
+
+                td{
+                    padding-left: 8px;
+                }
+            }
+
+            tr:nth-of-type(1){
+                width: 720px;
+            }
+
+            tr:nth-of-type(2){
+                width: 144px;
+            }
+
+            tr:nth-of-type(3){
+                width: 160px;
+            }
+
+            tr:nth-of-type(4){
+                width: 176px;
+            }
+
+            thead{
+                border-top: 1px solid #E6E6E6;
+                background-color: #F5F5F5;
+
+                tr{
+                    font-size: 12px;
+                    color: #666666;
+                    line-height: 18px;
+                    font-weight: bold;
+                }
+            }
+
+            tbody{
+
+                tr{
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 20px;
+
+                    a{
+                        color: #00AAFF;
+                    }
+                }
+            }
+        }
+
+        .hint{
+            margin-top: 190px;
+
+            .up{
+                font-size: 18px;
+                color: #666666;
+                text-align: center;
+            }
+
+            .down{
+                font-size: 14px;
+                color: #999999;
+                text-align: center;
+                line-height: 20px;
+                margin-top: 16px;
+            }
+        }
+    }
+}

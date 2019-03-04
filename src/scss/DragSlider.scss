@@ -1,0 +1,59 @@
+.dragSlider{
+    .drag{
+        border-radius: 4px;
+        position: relative;
+        background-color: #E6E6E6;
+        width: 400px;
+        height: 48px;
+    
+        .handler {
+            border-radius:30px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 48px;
+            height: 48px;
+            border: 1px solid #ccc;
+            cursor: move;
+        }
+    
+        .handlerBg {
+            border: 1px solid #D8D8D8;
+            box-shadow: 0 0 6px 0 rgba(0,0,0,0.20), inset 0 2px 0 0 #F5F5F5;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background: #fff url("../assets/slide_nor.png") no-repeat center;
+        }
+    
+        .handlerOKBg {
+            border: 1px solid #D8D8D8;
+            box-shadow: 0 0 6px 0 rgba(0,0,0,0.20), inset 0 2px 0 0 #F5F5F5;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background: #fff url("../assets/WellFormed.png") no-repeat center;
+        }
+    
+        .dragBg {
+            background-color: #52CC52;
+            height: 48px;
+            width: 0px;
+        }
+    
+        .dragText {
+            position: absolute;
+            top: 0px;
+            width: 400px;
+            line-height: 48px;
+            text-align: center;
+            user-select: none;
+        }
+    }
+    
+    .dragInfo{
+        font-size: 12px;
+        color: #FF2119;
+        line-height: 16px;
+        margin-top: 4px;
+        width: 400px;
+    }
+}

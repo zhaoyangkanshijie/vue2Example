@@ -1,0 +1,350 @@
+.course{
+    background-color: #FFFFFF;
+}
+.to-course-list{
+    margin: 40px auto;
+    width: 1200px;
+    text-align: left;
+    font-size: 14px;
+    color: #666666;
+    line-height: 20px;
+    cursor: pointer;
+    span{
+        transform: rotate(-135deg);
+        border-top: 1px solid #999999;
+        border-right: 1px solid #999999;
+        display: block;
+        width: 7px;
+        height: 7px;
+        float: left;
+        margin: 6px 2px 0 0;
+    }
+}
+.lesson-video-main{
+    width: 1200px;
+    height: 540px;
+    margin: 24px auto;
+    position: relative;
+    video{
+        float: left;
+    }
+    .videoEnd{
+        width: 960px;
+        height: 540px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999999;
+        background: rgba(0,0,0,0.8);
+        .learned{
+            font-size: 18px;
+            color: #FFFFFF;
+            margin: 180px auto 40px;
+            text-align: center;
+            line-height: 28px;
+        }
+        div{
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: 248px;
+            cursor: pointer;
+            p{
+                font-size: 12px;
+                color: #FFFFFF;
+                margin-top: 28px;
+            }
+        }
+        .rePlay{
+            background: url(../assets/replay.png) center 0 no-repeat;
+            left: 392px;
+        }
+        .next{
+            background: url(../assets/next.png) center 0 no-repeat;
+            left: 520px;
+        }
+    }
+    .video-controls{
+        width: 960px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 32px;
+        background: rgba(0,0,0,0.5);
+        cursor: pointer;
+        
+        .play,.pause{
+            width: 24px;
+            height: 24px;
+            background: url(../assets/play24.png);
+            position: absolute;
+            left: 16px;
+            top: 4px;
+        }
+        .pause{
+            background: url(../assets/pause.png);
+        }
+        .next{
+            width: 24px;
+            height: 24px;
+            background: url(../assets/next.png);
+            position: absolute;
+            left: 56px;
+            top: 4px;
+        }
+        .sound,.muted{
+            width: 24px;
+            height: 24px;
+            background: url(../assets/sound.png);
+            position: absolute;
+            left: 880px;
+            top: 4px;
+        }
+        .muted{
+            background: url(../assets/mute.png);
+        }
+        .fullScreen{
+            width: 24px;
+            height: 24px;
+            background: url(../assets/fullScreen.png);
+            position: absolute;
+            left: 920px;
+            top: 4px;
+        }
+        .progressNum,.progressNum2{
+            position: absolute;
+            left: 96px;
+            top: 8px;
+            font-size: 12px;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+        .progressNum2{
+            left: 812px;
+        }
+        .progressWhiteBar{
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #00AAFF;
+            height: 6px;
+            width: 0%;
+            border-radius: 3px;
+            .progressBtn{
+                width: 8px;
+                height: 16px;
+                background: #FFFFFF;
+                box-shadow: 0 0 8px 0 rgba(0,170,255,0.50);
+                border-radius: 2px;
+                position: absolute;
+                right: -8px;
+                top: -5px;
+                z-index:999;
+            }
+        }
+        
+        .progressBar{
+            width: 632px;
+            height: 6px;
+            background: rgba(255,255,255,0.4);
+            border-radius: 3px;
+            left: 164px;
+            top: 14px;
+            position: absolute;
+            .chapterSpot{
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background: #fff;
+                position: absolute;
+                top: -1px;
+                cursor: pointer;
+                .catalog{
+                    display: none;
+                }
+                &:hover{
+                    .catalog{
+                        width: 110px;
+                        padding:0 8px 10px;
+                        border-radius: 2px;
+                        background: rgba(0,0,0,0.5);
+                        position: absolute;
+                        bottom: 25px;
+                        left: 50%;
+                        margin-left: -63px;
+                        display: block;  
+                        z-index: 99999;        
+                        p{
+                            font-size: 12px;
+                            color: #CCCCCC;
+                            padding-top: 8px;
+                                &.active{
+                                    text-shadow: 0 0 8px rgba(0,170,255,0.50);
+                                    color: #fff;  
+                            }                
+                        }             
+                    }
+                }
+            }
+        }
+    }
+    .tip{
+        width: 110px;
+        padding: 8px;
+        position: absolute;
+        left: 4px;
+        bottom: 36px;
+        background: rgba(0,0,0,0.5);
+        border-radius: 2px;
+        p{
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .catalog{
+            color: #FFFFFF;
+        }
+        .chapter{
+            color: #CCCCCC;
+            margin: 8px auto;
+            cursor: pointer;
+            &:hover{
+                color: #FFFFFF;
+                text-shadow: 0 0 8px rgba(0,170,255,0.50);
+            }
+        }
+        .close{
+            width: 16px;
+            height: 16px;
+            background: url(../assets/close16.png);
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            cursor: pointer;
+        }
+    }
+    .continue{
+        width: 285px;
+        height: 32px;
+        position: absolute;
+        left: 4px;
+        bottom: 36px;
+        border-radius: 2px;
+        background: rgba(0,0,0,0.5);
+        .close{
+            width: 16px;
+            height: 16px;
+            background: url(../assets/close16.png);
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            cursor: pointer;
+        }
+        p{
+            font-size: 12px;
+            color: #FFFFFF;
+            line-height: 32px;
+            margin-left: 8px;
+            span{
+                margin-left: 8px;
+                text-decoration: underline;
+                color: #00AAFF;
+                cursor: pointer;
+            }
+        }
+    }
+    .lesson-video-aside{
+        width: 240px;
+        height: 540px;
+        float: left;
+        background: #1A1A1A;
+        overflow-x: hidden;       
+        
+        &::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 8px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 1px;
+        }
+        &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+            border-radius: 4px;
+             -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: rgba(255,255,255,0.4);
+        }
+        &::-webkit-scrollbar-track {/*滚动条里面轨道*/
+            background: #1A1A1A;
+        }
+        .catalog{
+            height: 40px;
+            line-height: 40px;
+            padding-left: 8px;
+            font-size: 13px;
+            color: #999999;
+        }
+        .lesson-video-section-item{
+            height: 56px;
+            padding-left: 8px;
+            position: relative;
+            &:hover{
+                background: #404040;
+                cursor: pointer;
+            }
+            p{
+                &:first-child{
+                    font-size: 12px;
+                    color: #999999;
+                    line-height: 16px;
+                    padding-top: 4px;
+                }
+                &:nth-child(2){
+                    font-size: 14px;
+                    color: #D9D9D9;
+                    line-height: 20px;
+                    margin-top: 8px;
+                }
+            }
+            .state{
+                position: absolute;
+                padding: 2px 4px;
+                font-size: 12px;
+                color: #fff;
+                opacity: 0.5;
+                border-radius: 2px;
+                top: 4px;
+                right: 8px;
+                font-weight: bold;
+            }
+            .state1{
+                background: #FF794D;
+            }
+            .state2{
+                background: #FFAC5A;
+                box-shadow: 0 0 4px 0 #FFAC5A;
+            }
+            .state3{
+                background: #70CC70;
+                box-shadow: 0 0 4px 0 #70CC70;
+            }
+            .playing{
+                position: absolute;
+                top: 4px;
+                right: 8px;
+                background: url(../assets/playing.png);
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+.title{
+    width: 1200px;
+    margin: 16px auto;
+    font-size: 18px;
+    color: #333333;
+    line-height: 24px;
+}
+.detail{
+    width: 1200px;
+    margin: 16px auto;
+    font-size: 14px;
+    color: #666666;
+    line-height: 20px;
+    min-height: 130px;
+}
