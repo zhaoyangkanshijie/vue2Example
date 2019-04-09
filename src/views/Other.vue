@@ -3,7 +3,7 @@
     <Header :hasNav="true" :whichNav="4" :hasLoginInfo="true" />
     <div class="main">
       <div class="container">
-        <h1>跨域配置vue.config.js</h1>
+        <h1>跨域配置vue.config.js和nginx</h1>
         <pre>
           module.exports = {
               publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
@@ -27,6 +27,28 @@
                           }
                       }
                   },  // 配置多个代理
+              }
+          }
+        </pre>
+        <pre>
+          server {
+              listen       8083;
+              server_name  localhost;
+              
+              location / {
+                  root   D:\wwwroot;
+                  try_files $uri $uri/ /index.html;
+                  index  index.html index.htm;
+              }
+
+              location /api {
+                  add_header 'Access-Control-Allow-Origin' '*';
+                  proxy_pass http://localhost:7675/api;
+              }
+              
+              error_page   500 502 503 504  /50x.html;
+              location = /50x.html {
+                  root   html;
               }
           }
         </pre>

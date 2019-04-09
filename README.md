@@ -218,7 +218,7 @@ watch: {
 * 记录视频观看进度
 
 ## 其它功能
-### 跨域配置vue.config.js
+### 跨域配置vue.config.js和nginx
 ```js
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
@@ -244,6 +244,28 @@ module.exports = {
         },  // 配置多个代理
     }
 }
+```
+```txt
+    server {
+        listen       8083;
+        server_name  localhost;
+        
+        location / {
+            root   D:\wwwroot;
+            try_files $uri $uri/ /index.html;
+            index  index.html index.htm;
+        }
+
+        location /api {
+            add_header 'Access-Control-Allow-Origin' '*';
+            proxy_pass http://localhost:7675/api;
+        }
+        
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+    }
 ```
 
 ### 全局引入组件axios cookie
