@@ -213,6 +213,14 @@ export default {
       this.$router.push({ path: '/courseVideo/'+id})
       this.setVideoData(this.$store.state.courseItem)
       this.isEnded = false;
+      window.location.reload();
+      let videoMoveInter = setInterval(()=>{
+        let video = this.$refs.vdo;
+        if(video != null && !isNaN(video.duration)){
+          video.play()
+          this.loading=false;
+        }
+      },100);
     },
     //重新播放
     videoReplay: function(time){
@@ -269,25 +277,7 @@ export default {
     }
   },
   computed: {
-    calDuration: function(){
-      return function(times){
-        var result = '00:00:00';
-        var hour,minute,second
-        if (times > 0) {
-          hour = Math.floor(times / 3600);
-          hour = hour < 10 ? '0'+hour : hour;
-          
-          minute = Math.floor((times - 3600 * hour) / 60);
-          minute = minute < 10 ? '0'+minute : minute;
-    
-          second = Math.floor((times - 3600 * hour - 60 * minute) % 60);
-          second = second < 10 ? '0'+second : second;
-         
-          result = hour+':'+minute+':'+second;
-        }
-        return result
-      }
-    },
+    calDuration: () => times => new Date(times * 1000 - 28800000).toTimeString().slice(0, 8),
     //筛选分类
     tagSelect: function () {
       return function(arr,value) {
