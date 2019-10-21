@@ -1,0 +1,12 @@
+@function pxToRem($px, $base: 375px) {
+    $min: 1 / $base * 10 * 1;
+    $result: $px / $base * 10 * 1;
+
+    @if $result < 0.027 and $result > 0 {
+        @return 2px;
+    }
+
+    @else {
+        @return $px / $base * 10 * 1rem;
+    }
+}

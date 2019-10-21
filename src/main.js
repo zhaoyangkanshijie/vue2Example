@@ -5,6 +5,7 @@ import store from './store'
 import cookie from 'vue-cookies'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import 'lib-flexible'
 
 Vue.config.productionTip = false
 Vue.use(cookie);

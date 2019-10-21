@@ -9,6 +9,7 @@ import UserHome from './views/UserHome.vue'
 import CourseVideo from './views/CourseVideo.vue'
 import Material from './views/Material.vue'
 import Exception from './views/Exception.vue'
+import mLogin from './mobile/views/Login.vue'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/m/login',
+      name: 'mlogin',
+      component: mLogin
     },
     {
       path: '/forgetAccount',

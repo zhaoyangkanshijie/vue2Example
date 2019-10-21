@@ -217,6 +217,15 @@ watch: {
 * video操作
 * 记录视频观看进度
 
+### 移动端登录页/m/lodin
+1. 功能描述
+
+* 页面显示带rem的文字
+
+2. 技术面
+* flexible引入与index去除meta
+* scss pxToRem函数与引入
+
 ## 其它功能
 ### 跨域配置vue.config.js和nginx
 ```js
