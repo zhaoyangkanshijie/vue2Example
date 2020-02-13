@@ -226,6 +226,17 @@ watch: {
 * flexible引入与index去除meta
 * scss pxToRem函数与引入
 
+### 过场动画
+1. 功能描述
+
+页面切换时带动画
+
+![transition](./transition.gif)
+
+2. 技术面
+* vue transition
+* css3 transition/transform/animation/@keyframes
+
 ## 其它功能
 ### 跨域配置vue.config.js和nginx
 ```js
@@ -287,4 +298,19 @@ import VueAxios from 'vue-axios'
 
 Vue.use(cookie);
 Vue.use(VueAxios,axios);
+```
+
+### 按需加载
+
+router.js
+```js
+const router = new VueRouter({
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: () => import('./views/Home.vue')
+    }
+  ]
+})
 ```

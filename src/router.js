@@ -20,72 +20,72 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: () => import('./views/Home.vue')
     },
     {
       path: '/myComponent',
       name: 'myComponent',
-      component: MyComponent
+      component: () => import('./views/MyComponent.vue')
     },
     {
       path: '/page',
       name: 'page',
-      component: Page
+      component: () => import('./views/Page.vue')
     },
     {
       path: '/other',
       name: 'other',
-      component: Other
+      component: () => import('./views/Other.vue')
     },
     {
       path: '/login',
       name: 'login',
-      component: Login
+      component: () => import('./views/Login.vue')
     },
     {
       path: '/m/login',
       name: 'mlogin',
-      component: mLogin
+      component: () => import('./mobile/views/Login.vue')
     },
     {
       path: '/forgetAccount',
       name: 'forgetAccount',
-      component: Login
+      component: () => import('./views/Login.vue')
     },
     {
       path: '/forgetPassword',
       name: 'forgetPassword',
-      component: Login
+      component: () => import('./views/Login.vue')
     },
     {
       path: '/resetPassword',
       name: 'resetPassword',
-      component: Login
+      component: () => import('./views/Login.vue')
     },
     {
       path: '/userHome/information',
       name: 'userInformation',
-      component: UserHome
+      component: () => import('./views/UserHome.vue')
     },
     {
       path: '/userHome/password',
       name: 'userPassword',
-      component: UserHome
+      component: () => import('./views/UserHome.vue')
     },
     {
       path: '/coursevideo/:id',
       name: 'coursevideo',
-      component: CourseVideo
+      component: () => import('./views/CourseVideo.vue')
     },
     {
       path: '/material',
       name: 'material',
-      component: Material
+      component: () => import('./views/Material.vue')
     },
     {
       path: '/exception',
       name: 'exception',
-      component: Exception
+      component: () => import('./views/Exception.vue')
     }
   ]
 })

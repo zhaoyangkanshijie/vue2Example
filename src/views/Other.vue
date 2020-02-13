@@ -61,6 +61,18 @@
           Vue.use(cookie);
           Vue.use(VueAxios,axios);
         </pre>
+        <h1>按需加载</h1>
+        <pre>
+          const router = new VueRouter({
+            routes: [
+              {
+                path: '/',
+                name: 'home',
+                component: () => import('./views/Home.vue')
+              }
+            ]
+          })
+        </pre>
       </div>
     </div>
     <Footer />
