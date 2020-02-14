@@ -237,6 +237,21 @@ watch: {
 * vue transition
 * css3 transition/transform/animation/@keyframes
 
+### 轮播图
+1. 功能描述
+
+轮播图实现
+
+![slider](./slider.gif)
+
+2. 技术面
+* vue transition-group
+* css3 transition/transform
+
+3. 实现思路
+
+以无限轮播为例，先布局为5123451，5后移再后移和1前移再前移，需要设置transition-duration为0，瞬间复位位置后，再设置transition-duration为300，正常轮播
+
 ## 其它功能
 ### 跨域配置vue.config.js和nginx
 ```js

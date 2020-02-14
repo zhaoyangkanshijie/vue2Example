@@ -1,0 +1,173 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+.slider {
+  width: 1226px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+  margin: 20px 0 20px;
+}
+
+.slide {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide-item {
+  display: block;
+  width: 1226px;
+}
+
+.banner .banner-prev,
+.banner .banner-next {
+  position: absolute;
+  top: 50%;
+  width: 41px;
+  height: 69px;
+  margin-top: -35px;
+  z-index: 5;
+  cursor: pointer;
+  outline: none;
+}
+
+.banner-prev {
+  background: url("../assets/icon-slides.png")
+    no-repeat -84px 50%;
+  left: 0;
+  right: auto;
+}
+
+.banner-next {
+  background: url("../assets/icon-slides.png")
+    no-repeat -125px 50%;
+  right: 0;
+  left: auto;
+}
+
+.banner-prev:hover {
+  background: url("../assets/icon-slides.png")
+    no-repeat 0px 50%;
+}
+
+.banner-next:hover {
+  background: url("../assets/icon-slides.png")
+    no-repeat -42px 50%;
+}
+
+.banner-points {
+  position: absolute;
+  display: inline-block;
+  width: 400px;
+  left: auto;
+  right: 30px;
+  bottom: 20px;
+  text-align: right;
+  transform: translateZ(0);
+  z-index: 10;
+}
+
+.banner-points .banner-point {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.banner-points .banner-point:hover {
+  background: hsla(0, 0%, 100%, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-points .active {
+  background: hsla(0, 0%, 100%, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-container {
+  position: relative;
+  height: 460px;
+  display: flex;
+
+  .image-container {
+    /* width: 100%; */
+    height: auto;
+
+    a {
+        display: block;
+
+        img {
+            width: 100%;
+        }
+    }
+  }
+}
+
+.my-slide{
+    display: block;
+}
+
+.my-banner-container{
+  position: relative;
+  height: 460px;
+  //width: 5*1226px;
+
+  .image-container {
+    float: left;
+    //width: 20%;
+    height: auto;
+
+    a {
+        display: block;
+
+        img {
+            width: 100%;
+        }
+    }
+  }
+}
+
+.banner-slide {
+  transition: all 1s ease-in-out;
+}
+
+/* 闪现轮播图 */
+.banner-trans-enter-active {
+  transition: all 0.1s ease-in-out;
+  opacity: 1;
+}
+
+.banner-trans-leave-active {
+  opacity: 0;
+}
+
+.banner-trans-enter,
+.banner-trans-leave-to {
+  opacity: 0;
+}
+
+.banner-trans-enter-to,
+.banner-trans-leave {
+  opacity: 1;
+}

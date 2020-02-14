@@ -9,6 +9,7 @@
         <router-link to="/exception?code=404">页面404</router-link>
         <router-link to="/exception?code=500">页面500</router-link>
         <router-link to="/coursevideo/2">自定义视频</router-link>
+        <router-link to="/slider">轮播图</router-link>
       </div>
     </div>
     <Footer />

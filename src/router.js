@@ -86,6 +86,11 @@ export default new Router({
       path: '/exception',
       name: 'exception',
       component: () => import('./views/Exception.vue')
+    },
+    {
+      path: '/slider',
+      name: 'slider',
+      component: () => import('./views/Slider.vue')
     }
   ]
 })
