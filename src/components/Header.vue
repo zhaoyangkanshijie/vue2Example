@@ -4,7 +4,7 @@
       <router-link to="/">
         <p class="logo">zhaoyangkanshijie</p>
         <p class="line">|</p>
-        <p class="title">vue3Example</p>
+        <p class="title">vue2Example</p>
       </router-link>
       <div class="nav" v-if="hasNav">
         <router-link class="item" :class="whichNav == 1 ? 'active' : ''" to="/">首页</router-link>

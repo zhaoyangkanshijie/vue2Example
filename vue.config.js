@@ -30,13 +30,13 @@ module.exports = {
     filenameHashing: true,
     parallel: require('os').cpus().length > 1,
     devServer: {
-        before(app) {
-            app.get(/.*.(js)$/, (req, res, next) => {
-                req.url = req.url + '.gz';
-                res.set('Content-Encoding', 'gzip');
-                next();
-            })
-        },
+        // before(app) {
+        //     app.get(/.*.(js)$/, (req, res, next) => {
+        //         req.url = req.url + '.gz';
+        //         res.set('Content-Encoding', 'gzip');
+        //         next();
+        //     })
+        // },
         port: 8080, // 端口号
         host: 'localhost',
         https: false, // https:{type:Boolean}

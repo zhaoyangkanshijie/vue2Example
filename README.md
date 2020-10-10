@@ -36,7 +36,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 inputBox组件由标题、可变类型输入框、错误提示三部分组成，适用于数据填写与校验，减少提交数据的复杂度。
 
-![inputBox](./inputbox.gif)
+![inputBox](./inputbox.jpg)
 
 2. 技术面
 * 父子组件通信：props、emit（自定义事件）
