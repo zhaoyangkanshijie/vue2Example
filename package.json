@@ -13,7 +13,7 @@
     "axios": "^0.18.0",
     "compression-webpack-plugin": "^6.0.3",
     "image-webpack-loader": "^7.0.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "lib-flexible": "^0.3.2",
     "vue": "^2.5.22",
     "vue-axios": "^2.1.4",
